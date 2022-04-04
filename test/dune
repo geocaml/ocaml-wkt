@@ -1,0 +1,11 @@
+(executable
+ (name wkt_eio)
+ (libraries eio eio_main wkt))
+
+(rule
+ (alias runtest)
+ (deps wkt_eio.exe example.wkt)
+ (targets example2.wkt)
+ (mode promote)
+ (action
+  (run ./wkt_eio.exe example.wkt example2.wkt)))
