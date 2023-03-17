@@ -1,4 +1,4 @@
 (library
  (name wkt)
- ; (public_name )
+ (public_name wkt)
  (libraries))
