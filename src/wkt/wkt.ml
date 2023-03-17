@@ -29,11 +29,12 @@ let _u_plus = 0x2B (* + *)
 
 let u_comma = 0x2C (* , *)
 
-let _u_minus = 0x2D (* - *)
+let u_minus = 0x2D (* - *)
 
 let is_white = function 0x20 | 0x09 | 0x0D | 0x0A -> true | _ -> false
 let is_atom_char c = (0x41 <= c && c <= 0x5A) || (0x61 <= c && c <= 0x7A)
 let is_digit u = 0x30 <= u && u <= 0x39
+let is_hyphen c = c = u_minus
 
 let is_val_sep = function
   (* N.B. Uutf normalizes U+000D to U+000A. *)
@@ -140,7 +141,7 @@ let rec r_lexeme d =
     r_white d;
     r_lexeme d)
   else if is_atom_char d.c then r_geometry d
-  else if is_digit d.c then r_float d
+  else if is_hyphen d.c || is_digit d.c then r_float d
   else if d.c = u_lpar then r_po d
   else if d.c = u_rpar then r_pc d
   else if d.c = u_comma then r_comma d
