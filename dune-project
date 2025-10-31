@@ -1,4 +1,5 @@
-(lang dune 2.9)
+(lang dune 3.18)
+(using mdx 0.4)
 
 (name wkt)
 

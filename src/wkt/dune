@@ -1,4 +1,0 @@
-(library
- (name wkt)
- (public_name wkt)
- (libraries))

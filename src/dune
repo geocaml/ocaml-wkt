@@ -1,0 +1,8 @@
+(mdx
+  (files wkt.mli)
+  (libraries wkt bytesrw fmt))
+
+(library
+ (name wkt)
+ (public_name wkt)
+ (libraries astring bytesrw fmt nx))

@@ -1,0 +1,76 @@
+point (Nx Info:
+         Shape: [2]
+         Dtype: float64
+         Strides: [1]
+         Offset: 0
+         Size: 2
+         Data: [10, 10]
+        (2D))
+point (Nx Info:
+         Shape: [3]
+         Dtype: float64
+         Strides: [1]
+         Offset: 0
+         Size: 3
+         Data: [10, 10, 10]
+        (2D-m))
+point (Nx Info:
+         Shape: [4]
+         Dtype: float64
+         Strides: [1]
+         Offset: 0
+         Size: 4
+         Data: [10, 10, 10, 1234]
+        (3D-m))
+linestring (Nx Info:
+              Shape: [3x2]
+              Dtype: float64
+              Strides: [2; 1]
+              Offset: 0
+              Size: 6
+              Data: [[99, 99],
+                     [100, 100],
+                     [111, 111]]
+             (2D))
+linestring (Nx Info:
+              Shape: [3x4]
+              Dtype: float64
+              Strides: [4; 1]
+              Offset: 0
+              Size: 12
+              Data: [[99, 99, 23, 22],
+                     [100, 100, 10, 10],
+                     [2, 11, 2, 111]]
+             (3D-m))
+polygon (Nx Info:
+           Shape: [5x2]
+           Dtype: float64
+           Strides: [2; 1]
+           Offset: 0
+           Size: 10
+           Data: [[10, 10],
+                  [10, 20],
+                  [20, 20],
+                  [20, 15],
+                  [10, 10]]
+          (2D))
+polygon (Nx Info:
+           Shape: [3x2]
+           Dtype: float64
+           Strides: [2; 1]
+           Offset: 0
+           Size: 6
+           Data: [[10, 10],
+                  [20, 15],
+                  [10, 10]]
+         
+         Nx Info:
+           Shape: [3x2]
+           Dtype: float64
+           Strides: [2; 1]
+           Offset: 0
+           Size: 6
+           Data: [[10, 10],
+                  [20, 30],
+                  [40, 40]]
+          (2D))
